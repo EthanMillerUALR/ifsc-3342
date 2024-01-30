@@ -1,5 +1,5 @@
 /*
-Resers Margin/Padding on all elements to 0
+Resets Margin/Padding on all elements to 0
 */
 
 
@@ -37,8 +37,7 @@ dd {
 	margin-top: 20px;
 	border: 1px solid #CCC;
 }
-#header {
-}
+
 #header h1 a {
 	background-image: url("../img/assessment-2-edited.webp");
 	display: block;
