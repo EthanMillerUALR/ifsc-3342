@@ -1,0 +1,44 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url("pre-assessment/assets/img/assessment-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+h2 {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul {
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0px 0px 0px 30px;
+    font-size: 1rem;
+}
+
+li {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a:hover {
+    color: green;
+}
