@@ -18,32 +18,38 @@ html {
 }
 
 main {
-    width: 960px;
+    /*width: 980px;*/
     margin: 20px auto;
     border: 1px solid #000;
-    background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.png");
+    background-image: url("../img/grid\ 16.png");
 }
 
 header.primary, footer.primary {
-    width:920px;
+   /* width:940px;*/
+   width: 95.9183%;
     background: rgba(0, 0, 0, 0.4);
-    margin: 20px;
+    /*margin: 20px;*/
+    margin: 2.0408%;
     padding: 20px 20px 20px 20px;
     float: left;
 }
 
 #blog {
     background: rgba(0, 0, 0, 0.6);
-    width: 638px;
-    margin-left: 20px;
+    /*width: 640px;*/
+    width: 65.3061%;
+    /*margin-left: 20px;*/
+    margin-left: 2.0408%;
     padding: 20px 20px 20px 20px;
     float: left;
 }
 
 aside {
     background: rgba(0, 0, 0, 0.3);
-    width:262px;
-    margin-left: 20px;
+    /*width:280px;*/
+    width: 28.5714%;
+    /*margin-left: 20px;*/
+    margin-left: 2.0408%;
     padding: 20px 20px 20px 20px;
     float: left;
 }
