@@ -1,0 +1,53 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+main {
+    width: 90vw;
+    display:grid;
+    grid-template-columns: repeat( 16, [col] 1fr);
+    grid-template-rows: auto;
+    margin:auto;
+    grid-gap: 20px;
+    border: 1px solid#000;
+    padding:20px
+}
+
+header.primary {
+    background: rgba(0, 0, 0, 0.4);
+    grid-column: col 1/ col 17;
+    grid-row: 1/2;
+    padding: 20px;
+}
+
+#content {
+    grid-column: col 1/col 17;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+}
+
+footer.primary {
+    background: rgba(0, 0, 0, 0.4);
+    grid-column: col 1/col 17;
+    grid-row: 3/4;
+    padding: 20px;
+}
+
+#blog {
+    background: rgba(0, 0, 0, 0.6);
+    grid-column: col 1/col 13;
+    padding: 20px;
+}
+
+aside {
+    background: rgba(0, 0, 0, 0.3);
+    grid-column: col 13/col 17;
+    padding: 20px;
+}
