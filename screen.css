@@ -30,7 +30,15 @@ ul {
 
 li {
     margin-top: 10px;
+    background-color: orange;
+    padding:20px;
+  border:1px solid white;
+  border-radius:6px;
 }
+
+li:nth-child(odd) {
+    background-color: #8fb87f;
+  }
 
 a {
     text-decoration: none;
@@ -48,6 +56,7 @@ nav ul {
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:20px;
+
     
 }
 
@@ -66,7 +75,7 @@ nav ul {
 @media screen and (max-width: 1000px) and (min-width:801px){
   
     nav ul{
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     
   }
