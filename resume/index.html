@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <header class="container" id="top">
+    <!-- Main navigation -->
+    <nav class="primary">
+    <ul>  
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+     </ul>  
+    </nav>
+  </header>
+  <!-- Main -->
+  <main itemscope itemtype="http://schema.org/Person" class="container">
+    <h1 class="page-title">Ethan Cade Miller</h1>
+    <section id="about">
+      <h2>Personal Details</h2>
+      <div class="bio">
+      <img itemprop="image" src="img/Web-App-Headshot.jpg" alt="Ethan Miller">
+      <p itemprop="description">Hello, my name is Ethan Miller. I am 20 years old, and will be 21 on March 14th. 
+        My major is that of Computer Science, and I plan to become a Video Game Designer as my fulltime career. 
+        I am in my junior year of my degree, and on my second semester. I am also an Eagle Scout, and currently am employed.</p>
+      </div>  
+      <dl class="details">
+        <dt>Name</dt>
+        <dd itemprop="name">
+          <span itemprop="givenName">Ethan</span> <span itemprop="familyName">Miller</span>
+        </dd>
+        <dt>Date of birth</dt>
+        <dd itemprop="birthDate"><time datetime="2003-03-14">03/14/2003</time></dd>
+        <dt>Nationality</dt>
+        <dd itemprop="nationality">United States</dd>
+        <dt>Location</dt>
+        <dd itemprop="homeLocation">Arkansas</dd>
+        <dt>Telephone</dt>
+        <dd>
+          <a itemprop="telephone" href="tel:501.563.2771">501.563.2771</a>
+        </dd>
+        <dt>Email</dt>
+        <dd>
+          <a itemprop="email" href="mailto:ecmiller@ualr.edu">ecmiller@ualr.edu</a>
+        </dd>
+        <dt>Address</dt>
+  
+        <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">20811 Presley Drive</span>
+          <span itemprop="addressLocality">Little Rock</span>
+          <span itemprop="postalCode">72135</span>
+          <span itemprop="addressCountry">USA</span>
+        </dd>
+  
+      </dl>
+      <ul class="related-links">
+        <li><a itemprop="url" rel="me" href="https://github.com/profile"> github</a></li>
+        <li><a itemprop="url" rel="me" href="http://linkedin.com/profile">linkedin</a></li>
+        <li><a itemprop="url" href="resume.pdf" download>pdf resume</a></li>
+      </ul>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li class="skill">HTML</li>
+        <li class="skill">PHP</li>
+        <li class="skill">Java</li>
+        <li class="skill">Scss</li>
+      </ul>
+      
+    </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <!-- current job -->
+      <article class="job">
+        <h3 itemprop="jobTitle">Junior Developer</h3>
+        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <span itemprop="name">Rambunctious Canine</span>
+          <span>May 2022 - Present</span>
+          <p itemprop="description">Recent hire as a game developer</p>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+            <a itemprop="url" href="http://rambunctiouscanine.com">Rambunctious Canine Website</a>
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality">Texas, USA</span>
+          </span>
+          </span>
+        </div>
+      </article>
+      <!-- Previous Jobs - Notice Slightly Different Format-->
+      <article class="job" itemscope itemtype="http://schema.org/Organization">
+        <h3 itemprop="name">Web Developer</h3>
+        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+            <span itemprop="name">Comcap</span>
+        <a itemprop="url" href="http://comcap.com">Comcap Website</a>
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <span itemprop="addressLocality">Florida, USA</span>
+        </span>
+        </span>
+        <div itemscope itemtype="https://schema.org/EmployeeRole">
+        <span itemprop="startDate" content="2006-02-21T20:00">March 2019</span> - 
+        <span itemprop="endDate" content="2009-02-21T20:00">September 2021</span>
+        </div>
+        <p itemprop="description">Worked as a web developer, got valuable experience on dealing with games</p>
+      </article>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+        <h3 itemprop="description"><abbr title="Master of Science">BA</abbr> Computer Science and Design</h3>
+        <span itemprop="name">UALR</span>
+        <span itemprop="location" itemscope>Arkansas, USA</span>
+        <span>2023-2024</span>
+      </article>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div id="copyright">
+      &copy; 2024 Ethan Miller | <a href="#top">Top</a>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

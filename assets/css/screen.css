@@ -4,7 +4,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    background-image: url("pre-assessment/assets/img/assessment-2.jpg");
+    background-image: url("../img/assessment-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -24,7 +24,7 @@ ul {
     font-family: 'Times New Roman', Times, serif;
     list-style-type: none;
     margin-top: 20px;
-    padding: 0px 0px 0px 30px;
+    padding: 0px 30px 0px 30px;
     font-size: 1rem;
 }
 
@@ -68,14 +68,14 @@ nav ul {
 
   @media screen and (max-width:800px) and (min-width:601px){
     nav ul{
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 1000px) and (min-width:801px){
   
     nav ul{
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
     }
     
   }
