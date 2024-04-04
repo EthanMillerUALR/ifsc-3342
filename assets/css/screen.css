@@ -1,3 +1,12 @@
+:root {
+  --defaultpixel: 20px;
+  --bigpixel: 30px;
+  --primary-color: orange ;
+  --secondary-color: #8fb87f;
+  --text-color: blue;
+  --hover-color: green;
+}
+
 body {
     font-family: 'Times New Roman', Times, serif;
     color: #333;
@@ -16,45 +25,45 @@ h1 {
 h2 {
     color: whitesmoke;
     text-align: center;
-    margin-top: 20px;
+    margin-top: var(--defaultpixel);
 }
 
 ul {
     font-family: 'Times New Roman', Times, serif;
     list-style-type: none;
-    margin-top: 20px;
-    padding: 0px 30px 0px 30px;
+    margin-top: var(--defaultpixel);
+    padding: 0px var(--bigpixel) 0px var(--bigpixel);
     font-size: 1rem;
 }
 
 li {
     margin-top: 10px;
-    background-color: orange;
-    padding:20px;
+    background-color: var(--primary-color);
+    padding: var(--defaultpixel);
   border:1px solid white;
   border-radius:6px;
 }
 
 li:nth-child(odd) {
-    background-color: #8fb87f;
+    background-color: var(--secondary-color);
   }
 
 a {
     text-decoration: none;
-    color: blue;
+    color: var(--text-color);
     font-weight: bold;
     font-size: 16px;
 }
 
 a:hover {
-    color: green;
+    color: var(--hover-color);
 }
 
 
 nav ul {
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:20px;
+    gap: var(--defaultpixel);
 
     
 }
