@@ -16,6 +16,19 @@ body{
   text-aligh:center;
 } */
 
+:root {
+  --main-bg-color: #000000;
+  --second-bg-color: #504f4f;
+  --primary-text-color: #f9ef0b;
+  --second-text-color: #f0f376;
+}
+
+body {
+  background: var(--main-bg-color);
+  color: var(--primary-type-color);
+  line-height: 1.6;
+}
+
 #content{
     background:red;
   }
