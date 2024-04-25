@@ -1,0 +1,69 @@
+:root {
+    --main-bg-color: #252828;
+    --primary-text-color: #f9ef0b;
+    --secondary-text-color: #f9c90b;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* ------ Typography -------*/
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  /* ------ Fluid Images -------*/
+  img {
+    max-width: 100%;
+  }
+
+  /* ------ Fluid Videos -------*/
+  video {
+    max-width: 100%;
+  }
+  
+  /* ------ Utility Classes  -------*/
+  .container {
+   /* Design Time */
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.15);
+  }
+  
+  /* ------ Helper Classes -------*/
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+  }
+  
+  /* ------ Global Styles -------*/
+  
+  body {
+    background: var(--main-bg-color);
+    color: var(--primary-text-color);
+    line-height: 1.6;
+  }
+
+#header-video {
+    height: 1000vh;
+    width: 1000vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
