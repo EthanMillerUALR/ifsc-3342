@@ -49,6 +49,20 @@
   }
   
   /* ------ Global Styles -------*/
+
+  
+
+  a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--secondary-text-color);
+}
   
   body {
     background: var(--main-bg-color);
@@ -60,9 +74,39 @@
   .container {
     max-width: 100%;
   }
+  .content-section{
+    max-width: 100%;
+  }
+  .card-section {
+    margin-bottom: 20px; 
+  }
   #header-video {
     width: 100%;
   }
-  #header-video {
-    
+  #body-image {
+    width: 100%;
+  }
+  #card-image {
+    width: 90%
+  }
+
+ @media screen and (min-width: 751px) and (max-width: 1200px) {
+  sub-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    width: auto; 
+    margin-bottom: 0; 
+  }
+  }
+
+  @media screen and (min-width: 1201px) {
+    sub-main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px; 
+      width: auto; 
+      margin-bottom: 0; 
+    }
+
   }
