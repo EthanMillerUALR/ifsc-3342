@@ -142,19 +142,19 @@ a:hover {
 
     .content-section {
       display: grid;
-      grid-template-columns: 45% auto;
+      grid-template-columns: 60% auto;
       grid-template-areas:
       "body-image body-text"
       ;
-      gap: 25px;
+      gap: 30px;
     }
     .content-section:nth-child(odd) {
       display: grid;
-      grid-template-columns: 45% auto;
+      grid-template-columns: auto 60%;
       grid-template-areas:
       "body-text body-image"
       ;
-      gap: 25px;
+      gap: 30px;
     }
 
   
