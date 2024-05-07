@@ -50,6 +50,15 @@
   
   /* ------ Global Styles -------*/
 
+  h2 {
+    color: black; 
+      text-shadow: 
+        -1px -1px 0 var(--primary-text-color),  
+        1px -1px 0 var(--primary-text-color),
+        -1px 1px 0 var(--primary-text-color),
+        1px 1px 0 var(--primary-text-color); 
+  }
+
   
 
   a {
@@ -73,24 +82,26 @@ a:hover {
 
   .container {
     max-width: 100%;
+    margin-bottom: 60px;
   }
   .content-section{
     max-width: 100%;
+    margin-bottom: 60px;
   }
   .card-section {
     margin-bottom: 20px; 
   }
-  #header-video {
+  .body-image {
     width: 100%;
   }
-  #body-image {
+  #header-video {
     width: 100%;
   }
   #card-image {
     width: 90%
   }
 
- @media screen and (min-width: 751px) and (max-width: 1200px) {
+ @media screen and (min-width: 751px) and (max-width: 1100px) {
   sub-main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -98,15 +109,54 @@ a:hover {
     width: auto; 
     margin-bottom: 0; 
   }
+  .small-links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    width: auto; 
+    margin-bottom: 0; 
+  }
   }
 
-  @media screen and (min-width: 1201px) {
+  @media screen and (min-width: 1101px) {
     sub-main {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px; 
       width: auto; 
-      margin-bottom: 0; 
+      margin-bottom: 20px; 
+    }
+    .small-links{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px; 
+      width: auto; 
+      margin-bottom: 20px; 
+    }
+    .body-image {
+      grid-area: body-image;
+    }
+    .body-text {
+      grid-area: body-text;
     }
 
+    .content-section {
+      display: grid;
+      grid-template-columns: 45% auto;
+      grid-template-areas:
+      "body-image body-text"
+      ;
+      gap: 25px;
+    }
+    .content-section:nth-child(odd) {
+      display: grid;
+      grid-template-columns: 45% auto;
+      grid-template-areas:
+      "body-text body-image"
+      ;
+      gap: 25px;
+    }
+
+  
+    
   }
